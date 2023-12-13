@@ -1,0 +1,22 @@
+It is a snake game developed using Core Java (Swing, AWT, Graphics, Exceptional Handling, OOPS, Abstract classes, Interfaces)
+Created a class that extends JFrame and implements the GamePanel interface. This class will be the main window of the game, where the panel added that displays the snake and food, and the label that shows the score. The GamePanel interface will have methods for drawing, moving, checking collisions, and starting the game.
+Created an abstract class called GameObject that defines the common attributes and behaviors of the snake and food objects. This class  have fields for the x and y coordinates, the width and height, and the color of the object. It also have an abstract method called draw that takes a Graphics object as a parameter and draws the object on the panel.
+Created two subclasses of GameObject: Snake and Food. The Snake class will have a LinkedList of Point objects that store the coordinates of each segment of the snake. It also have fields for the direction and speed of the snake. The Food class have a field for the value of the food. Both classes will override the draw method to paint their shapes on the panel.
+Created a class that extends JPanel and implements ActionListener and KeyListener. This class will be the panel where the snake and food are drawn. It also handle the keyboard events and the timer that controls the game loop. In this class, an instance created of Snake and Food, and call their methods to update their positions and check for collisions. the panel also repaint  every time the timer fires an action event.
+In the constructor of the main window class, created an instance of your panel class and add it to the frame.Also created a JLabel to display the score and add it to the frame. Some properties of the frame, such as size, title, location, visibility, etc are set.Called the startGame method of your panel class to initialize the game.
+In the main method, created an instance of your main window class and set it as visible.
+
+
+
+
+
+
+Some highlights of your snake game project using Core Java (Swing, AWT, Graphics, Exceptional Handling, OOPS, Abstract classes, Interfaces) are:
+
+used Swing to create a lightweight and cross-platform GUI for your game window, panel, and score display.
+used AWT to draw shapes, colors, fonts, and handle keyboard events for your game.
+used Graphics to paint the snake, food, and background on the panel.
+used Exceptional Handling to catch and handle any errors that may occur during the game execution.
+used OOPS to design and implement the classes and objects that represent the snake, food, and game logic.
+used Abstract classes to create a base class for the snake and food objects that defines their common attributes and behaviors.
+used Interfaces to create a contract for the game panel that specifies the methods for drawing, moving, checking collisions, and starting the game.
